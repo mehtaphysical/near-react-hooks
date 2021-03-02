@@ -1,19 +1,17 @@
 import React from 'react';
 import { NearEnvironment, getConfig } from './config';
+import { ConnectConfig, connect } from 'near-api-js';
 
 const NearContext = React.createContext(null);
 
-export interface NearProviderProps {
-  environment?: NearEnvironment
-  networkId: 'mainnet',
-  nodeUrl: 'https://rpc.mainnet.near.org',
-  walletUrl: 'https://wallet.near.org',
-  helperUrl: 'https://helper.mainnet.near.org',
-  explorerUrl: 'https://explorer.mainnet.near.org',
+export type NearProviderProps = ConnectConfig & {
+  environment?: NearEnvironment;
+  networkId?: string;
+  nodeUrl?: string;
 }
 
-export const NearProvider: React.FC<NearProviderProps> = ({ environment, children }) => {
-  const config = getConfig(environment);
+export const NearProvider: React.FC<NearProviderProps> = ({ environment, children, ...props }) => {
+  const config = { ...getConfig(environment), ...props };
 
 
   return (
