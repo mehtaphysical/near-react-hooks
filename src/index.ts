@@ -1,3 +1,4 @@
-import { NearProvider } from './provider';
+import { NearProviderProps, NearProvider } from './NearProvider'
 
-export { NearProvider }
+export { NearProviderProps, NearProvider }
+export * from './hooks'

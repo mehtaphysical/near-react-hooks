@@ -1,0 +1,4 @@
+{
+  "entryPoints": ["src/NearProvider.tsx", "src/hooks.ts", "src/NearEnvironment.ts"],
+  "out": "docs"
+}
