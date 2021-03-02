@@ -8,9 +8,12 @@
     "build"
   ],
   "scripts": {
+    "prebuild": "typedoc",
     "build": "rollup -c",
+    "pretest": "ts-standard",
     "test": "jest",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "prepublish": "npm run build"
   },
   "keywords": [],
   "author": "",
