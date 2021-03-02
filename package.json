@@ -50,7 +50,8 @@
     "ignore": [
       "build",
       "docs",
-      "node_modules"
+      "node_modules",
+      "src/**/*.test.js"
     ]
   },
   "_id": "near-react-hooks@1.0.0"
