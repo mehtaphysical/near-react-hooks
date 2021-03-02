@@ -1,7 +1,10 @@
 {
   "name": "near-react-hooks",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
+  "repository": {
+    "url": "https://github.com/mehtaphysical/near-react-hooks"
+  },
   "main": "build/index.js",
   "module": "build/index.es.js",
   "files": [

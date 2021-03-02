@@ -21,11 +21,11 @@ Then wrap your application with the `NearProvider` passing it an environment:
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { NearProvider } from 'near-react-hooks'
+import { NearProvider, NearEnvironment } from 'near-react-hooks'
 import App from './App'
 
 ReactDOM.render(
-  <NearProvider environment="testnet">
+  <NearProvider environment={NearEnvironment.TestNet}>
     <App />
   </NearProvider>,
   document.querySelector('#root')
