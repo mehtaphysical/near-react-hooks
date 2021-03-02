@@ -1,4 +1,4 @@
-[![Tests](https://github.com/mehtaphysical/near-react-hooks/workflows/tests/badge.svg?branch=main)](https://github.com/mehtaphysical/near-react-hooks/actions?query=workflow%3A%22tests%22)
+[![test](https://github.com/mehtaphysical/near-react-hooks/actions/workflows/test.yml/badge.svg)](https://github.com/mehtaphysical/near-react-hooks/actions/workflows/test.yml)
 [![Coverage Status](https://coveralls.io/repos/github/mehtaphysical/near-react-hooks/badge.svg?branch=main)](https://coveralls.io/github/mehtaphysical/near-react-hooks?branch=main)
 [![License](https://badgen.net/github/license/mehtaphysical/near-react-hooks)](https://github.com/mehtaphysical/near-react-hooks/blob/main/LICENSE)
 [![TS-Standard - Typescript Standard Style Guide](https://badgen.net/badge/code%20style/ts-standard/blue?icon=typescript)](https://github.com/standard/ts-standard)
