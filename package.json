@@ -1,18 +1,18 @@
 {
   "name": "near-react-hooks",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "",
   "repository": {
     "url": "https://github.com/mehtaphysical/near-react-hooks"
   },
   "main": "build/index.js",
-  "module": "build/index.es.js",
+  "module": "esm/index.js",
   "files": [
     "build"
   ],
   "scripts": {
     "prebuild": "typedoc",
-    "build": "rollup -c",
+    "build": "rollup -c && tsc --outDir esm",
     "pretest": "ts-standard",
     "test": "jest",
     "test:watch": "npm run test -- --watch",

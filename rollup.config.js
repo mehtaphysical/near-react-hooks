@@ -4,7 +4,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import json from '@rollup/plugin-json'
 import typescript from 'rollup-plugin-typescript2'
 
-const packageJson = require('./package.json')
+import packageJson from './package.json'
 
 export default {
   input: 'src/index.ts',
@@ -13,11 +13,6 @@ export default {
       file: packageJson.main,
       format: 'cjs',
       sourcemap: true
-    },
-    {
-      file: packageJson.module,
-      format: 'esm',
-      sourcemap: true
     }
   ],
   plugins: [
@@ -25,6 +20,6 @@ export default {
     resolve(),
     commonjs(),
     json(),
-    typescript({ useTsconfigDeclarationDir: true })
+    typescript()
   ]
 }
