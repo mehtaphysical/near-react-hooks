@@ -73,7 +73,7 @@ export const NearSignin: React.FC<NearSigninProps> = ({
       <button
         className={className}
         style={className !== undefined ? null : style !== undefined ? style : DEFAULT_STYLE}
-        onClick={() => console.log(wallet.requestSignIn(rest))}
+        onClick={() => wallet.requestSignIn(rest)}
       >
         {text}
       </button>
