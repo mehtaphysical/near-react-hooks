@@ -1,6 +1,6 @@
 {
   "name": "near-react-hooks",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "repository": {
     "url": "https://github.com/mehtaphysical/near-react-hooks"
@@ -46,7 +46,7 @@
     "react-dom": ">=17.0.1"
   },
   "dependencies": {
-    "near-api-js": "^0.37.0"
+    "near-api-js": "^0.42.0"
   },
   "ts-standard": {
     "project": "./ts-config.json",
