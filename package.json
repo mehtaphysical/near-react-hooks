@@ -1,6 +1,6 @@
 {
   "name": "near-react-hooks",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "",
   "repository": {
     "url": "https://github.com/mehtaphysical/near-react-hooks"
@@ -8,7 +8,8 @@
   "main": "build/index.js",
   "module": "esm/index.js",
   "files": [
-    "build"
+    "build",
+    "esm"
   ],
   "scripts": {
     "prebuild": "typedoc",
